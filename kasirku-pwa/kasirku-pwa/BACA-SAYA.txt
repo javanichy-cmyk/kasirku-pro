@@ -1,0 +1,23 @@
+KasirKu Pro - versi PWA (bisa dipasang & jalan offline)
+
+ISI FOLDER (semua harus berada di folder yang sama):
+  index.html            aplikasi
+  sw.js                 service worker (mode offline)
+  manifest.webmanifest  data aplikasi terpasang
+  icons/                ikon aplikasi
+
+CARA MEMASANG
+1) Unggah seluruh folder ke hosting https (gratis: Netlify Drop, Cloudflare Pages, GitHub Pages),
+   atau coba di komputer sendiri:  python3 -m http.server 8080   lalu buka http://localhost:8080
+2) Buka alamatnya satu kali dengan internet, lalu:
+   - Android/Chrome/Edge: Pengaturan > Pasang aplikasi (atau menu browser > Install)
+   - iPhone/iPad (Safari): Bagikan > Tambah ke Layar Utama
+3) Setelah itu aplikasi bisa dibuka tanpa internet.
+
+MEMPERBARUI
+Ganti index.html di hosting, lalu naikkan VERSION di sw.js (mis. kasirku-v2). Versi baru aktif saat aplikasi dibuka kembali.
+
+CATATAN
+- Data tersimpan di browser perangkat itu (IndexedDB), terpisah per perangkat dan per alamat.
+  Jika alamat hosting berubah, data tidak ikut: pindahkan lewat Unduh JSON > Pulihkan cadangan.
+- Ekspor/template Excel memerlukan internet pada pemakaian pertama (pustaka disimpan setelahnya).

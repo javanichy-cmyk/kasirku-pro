@@ -1,0 +1,38 @@
+{
+  "name": "KasirKu Pro — POS Retail",
+  "short_name": "KasirKu",
+  "description": "Aplikasi kasir (POS) offline untuk toko retail: stok, transaksi, laporan, utang-piutang.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f6f7fb",
+  "theme_color": "#5758dc",
+  "lang": "id",
+  "categories": [
+    "business",
+    "shopping",
+    "finance"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
